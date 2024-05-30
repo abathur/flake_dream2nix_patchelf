@@ -1,0 +1,104 @@
+{
+  "fetchPipMetadata": {
+    "sources": {
+      "blinker": {
+        "is_direct": false,
+        "sha256": "1779309f71bf239144b9399d06ae925637cf6634cf6bd131104184531bf67c01",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/bb/2a/10164ed1f31196a2f7f3799368a821765c62851ead0e630ab52b8e14b4d0/blinker-1.8.2-py3-none-any.whl",
+        "version": "1.8.2"
+      },
+      "click": {
+        "is_direct": false,
+        "sha256": "ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/00/2e/d53fa4befbf2cfa713304affc7ca780ce4fc1fd8710527771b58311a3229/click-8.1.7-py3-none-any.whl",
+        "version": "8.1.7"
+      },
+      "flask": {
+        "is_direct": false,
+        "sha256": "77fd4e1249d8c9923de34907236b747ced06e5467ecac1a7bb7115ae0e9670b0",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/fa/1a/f191d32818e5cd985bdd3f47a6e4f525e2db1ce5e8150045ca0c31813686/Flask-2.3.2-py3-none-any.whl",
+        "version": "2.3.2"
+      },
+      "importlib-metadata": {
+        "is_direct": false,
+        "sha256": "30962b96c0c223483ed6cc7280e7f0199feb01a0e40cfae4d4450fc6fab1f570",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/2d/0a/679461c511447ffaf176567d5c496d1de27cbe34a87df6677d7171b2fbd4/importlib_metadata-7.1.0-py3-none-any.whl",
+        "version": "7.1.0"
+      },
+      "itsdangerous": {
+        "is_direct": false,
+        "sha256": "c6242fc49e35958c8b15141343aa660db5fc54d4f13a1db01a3f5891b98700ef",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/04/96/92447566d16df59b2a776c0fb82dbc4d9e07cd95062562af01e408583fc4/itsdangerous-2.2.0-py3-none-any.whl",
+        "version": "2.2.0"
+      },
+      "jinja2": {
+        "is_direct": false,
+        "sha256": "bc5dd2abb727a5319567b7a813e6a2e7318c39f4f487cfe6c89c6f9c7d25197d",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/31/80/3a54838c3fb461f6fec263ebf3a3a41771bd05190238de3486aae8540c36/jinja2-3.1.4-py3-none-any.whl",
+        "version": "3.1.4"
+      },
+      "markupsafe": {
+        "is_direct": false,
+        "sha256": "db0b55e0f3cc0be60c1f19efdde9a637c32740486004f20d1cff53c3c0ece4d2",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/6c/77/d77701bbef72892affe060cdacb7a2ed7fd68dae3b477a8642f15ad3b132/MarkupSafe-2.1.5-cp39-cp39-macosx_10_9_x86_64.whl",
+        "version": "2.1.5"
+      },
+      "setuptools": {
+        "is_direct": false,
+        "sha256": "54faa7f2e8d2d11bcd2c07bed282eef1046b5c080d1c32add737d7b5817b1ad4",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/de/88/70c5767a0e43eb4451c2200f07d042a4bcd7639276003a9c54a68cfcc1f8/setuptools-70.0.0-py3-none-any.whl",
+        "version": "70.0.0"
+      },
+      "werkzeug": {
+        "is_direct": false,
+        "sha256": "fc9645dc43e03e4d630d23143a04a7f947a9a3b5727cd535fdfe155a17cc48c8",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/9d/6e/e792999e816d19d7fcbfa94c730936750036d65656a76a5a688b57a656c4/werkzeug-3.0.3-py3-none-any.whl",
+        "version": "3.0.3"
+      },
+      "zipp": {
+        "is_direct": false,
+        "sha256": "96dc6ad62f1441bcaccef23b274ec471518daf4fbbc580341204936a5a3dddec",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/7f/2d/670176f39d6613af2908b5bc31c9974588208de1fcc4117dfae08623d188/zipp-3.19.0-py3-none-any.whl",
+        "version": "3.19.0"
+      }
+    },
+    "targets": {
+      "default": {
+        "blinker": [],
+        "click": [],
+        "flask": [
+          "blinker",
+          "click",
+          "importlib-metadata",
+          "itsdangerous",
+          "jinja2",
+          "werkzeug"
+        ],
+        "importlib-metadata": [
+          "zipp"
+        ],
+        "itsdangerous": [],
+        "jinja2": [
+          "markupsafe"
+        ],
+        "markupsafe": [],
+        "setuptools": [],
+        "werkzeug": [
+          "markupsafe"
+        ],
+        "zipp": []
+      }
+    }
+  },
+  "invalidationHash": "34cff9d91d2abaf22f9506d32b82fe66c8fa7f84d73c5c505591e5a1ac9f9b26"
+}

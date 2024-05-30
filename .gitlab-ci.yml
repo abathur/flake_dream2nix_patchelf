@@ -1,0 +1,17 @@
+stages:
+  - test
+
+test:
+  # meta: stage, environment,
+  stage: test
+  # container/docker: image, services
+  image: nixos/nix:latest
+  # conditions: allow_failure, when, needs, rules, except, only, variables, retry
+  when: manual
+  # scripts: before, main, after
+  script:
+    - nix-env -i skopeo
+    - skopeo login docker.io
+    - nix --extra-experimental-features "nix-command flakes" run .#SIGH.lock
+    - nix --extra-experimental-features "nix-command flakes" build --print-build-logs .#SIGH
+  # outputs: coverage, artifacts
