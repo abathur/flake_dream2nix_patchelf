@@ -8,6 +8,13 @@
         "url": "https://files.pythonhosted.org/packages/bb/2a/10164ed1f31196a2f7f3799368a821765c62851ead0e630ab52b8e14b4d0/blinker-1.8.2-py3-none-any.whl",
         "version": "1.8.2"
       },
+      "cffi": {
+        "is_direct": false,
+        "sha256": "582215a0e9adbe0e379761260553ba11c58943e4bbe9c36430c4ca6ac74b15ed",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/9d/da/e6dbf22b66899419e66c501ae5f1cf3d69979d4c75ad30da683f60abba94/cffi-1.16.0-cp39-cp39-macosx_10_9_x86_64.whl",
+        "version": "1.16.0"
+      },
       "click": {
         "is_direct": false,
         "sha256": "ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28",
@@ -50,6 +57,20 @@
         "url": "https://files.pythonhosted.org/packages/6c/77/d77701bbef72892affe060cdacb7a2ed7fd68dae3b477a8642f15ad3b132/MarkupSafe-2.1.5-cp39-cp39-macosx_10_9_x86_64.whl",
         "version": "2.1.5"
       },
+      "misaka": {
+        "is_direct": false,
+        "sha256": "62f35254550095d899fc2ab8b33e156fc5e674176f074959cbca43cf7912ecd7",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/fa/87/b1020510a00aba1b936477e54180b143df654c565b84936b0b3e85272cf2/misaka-2.1.1.tar.gz",
+        "version": "2.1.1"
+      },
+      "pycparser": {
+        "is_direct": false,
+        "sha256": "c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc",
+        "type": "url",
+        "url": "https://files.pythonhosted.org/packages/13/a3/a812df4e2dd5696d1f351d58b8fe16a405b234ad2886a0dab9183fb78109/pycparser-2.22-py3-none-any.whl",
+        "version": "2.22"
+      },
       "setuptools": {
         "is_direct": false,
         "sha256": "54faa7f2e8d2d11bcd2c07bed282eef1046b5c080d1c32add737d7b5817b1ad4",
@@ -75,6 +96,9 @@
     "targets": {
       "default": {
         "blinker": [],
+        "cffi": [
+          "pycparser"
+        ],
         "click": [],
         "flask": [
           "blinker",
@@ -92,6 +116,10 @@
           "markupsafe"
         ],
         "markupsafe": [],
+        "misaka": [
+          "cffi"
+        ],
+        "pycparser": [],
         "setuptools": [],
         "werkzeug": [
           "markupsafe"
@@ -100,5 +128,5 @@
       }
     }
   },
-  "invalidationHash": "34cff9d91d2abaf22f9506d32b82fe66c8fa7f84d73c5c505591e5a1ac9f9b26"
+  "invalidationHash": "def7f8dc29a793609e9cccbdb3293bb266d424a86dc22a860f3f8f426dcc0ecd"
 }

@@ -17,6 +17,7 @@ jobs:
     - run: skopeo login -u "${{ github.actor }}" -p "${{ secrets.GITHUB_TOKEN }}" ghcr.io
     - run: nix --extra-experimental-features "nix-command flakes" run .#SIGH.lock
     - run: nix --extra-experimental-features "nix-command flakes" build .#SIGH --print-build-logs
+    - run: nix --extra-experimental-features "nix-command flakes" run github:nixos/nixpkgs#nix-tree -- --dot .#SIGH | grep misaka
 
   container:
     runs-on: ubuntu-latest

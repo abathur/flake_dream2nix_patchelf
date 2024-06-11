@@ -36,6 +36,7 @@ in {
     requirementsList = [
       "Flask==2.3.2"
       "setuptools"
+      "misaka"
     ];
 
     # Set `pip.flattenDependencies` to true to use all dependencies for the top-level package.
