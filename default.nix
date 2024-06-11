@@ -39,6 +39,8 @@ in {
       "misaka"
     ];
 
+    overrides.misaka.mkDerivation.dontStrip = false;
+
     # Set `pip.flattenDependencies` to true to use all dependencies for the top-level package.
     # Since the hub isn't a proper package itself, we need this to avoid:
     # error: Top-level package $name is not listed in the lockfile.
